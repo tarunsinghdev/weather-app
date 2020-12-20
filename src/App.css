@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.app {
+  /* background-color: #a3a2a2; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+  background: rgb(181, 189, 200); /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(181, 189, 200, 1) 0%,
+    rgba(130, 140, 149, 1) 36%,
+    rgba(40, 52, 59, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding: 30px;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__searchbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin: 30px auto;
+  padding: 12px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 2px 2px rgba(58, 53, 53, 0.73);
+  opacity: 0.5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 402px) {
+  .app__searchbar {
+    font-size: 18px;
+    width: 80%;
   }
 }
