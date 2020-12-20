@@ -11,7 +11,7 @@ const LocationWeather = ({ weatherData }) => {
           </div>
           <div className="locationweather__icon">
             <img
-              src={`http://openweathermap.org/img/w/${weatherData.icon}.png`}
+              src={`https://openweathermap.org/img/w/${weatherData.icon}.png`}
               alt=""
             />
           </div>
