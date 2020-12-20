@@ -25,7 +25,7 @@ const App = () => {
 
   const getWeatherData = async (lat, lon) => {
     const response = await axios.get(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&APPID=${process.env.REACT_APP_WEATHER_KEY}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&APPID=${process.env.REACT_APP_WEATHER_KEY}`
     );
     setIsLoaded(true);
     const { name } = response.data;
@@ -45,7 +45,7 @@ const App = () => {
   const getWeatherDataSearch = async () => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=${process.env.REACT_APP_WEATHER_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=${process.env.REACT_APP_WEATHER_KEY}`
       );
 
       const { name } = response.data;
